@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main class="container calculadora">
+        <section class="display-tela">
+            <section class="display"></section>
+            <input id="result" value="" type="text" readonly/>
+        </section>
+
+        <div class="teclas-container">
+            <input type="button" class="btn" value="C" onclick="retirar()">
+            <input type="button" class="btn" value="CE" onclick="limpar()">
+            <input type="button" class="btn" value="%" onclick="botao(value)">
+            <input type="button" class="btn" value="/" onclick="botao(value)">
+            <input type="button" class="btn" value="7" onclick="botao(value)">
+            <input type="button" class="btn" value="8" onclick="botao(value)">
+            <input type="button" class="btn" value="9" onclick="botao(value)">
+            <input type="button" class="btn" value="*" onclick="botao(value)">
+            <input type="button" class="btn" value="4" onclick="botao(value)">
+            <input type="button" class="btn" value="5" onclick="botao(value)">
+            <input type="button" class="btn" value="6" onclick="botao(value)">
+            <input type="button" class="btn" value="-" onclick="botao(value)">
+            <input type="button" class="btn" value="1" onclick="botao(value)">
+            <input type="button" class="btn" value="2" onclick="botao(value)">
+            <input type="button" class="btn" value="3" onclick="botao(value)">
+            <input type="button" class="btn" value="0" onclick="botao(value)">
+            <input type="button" class="btn" value="." onclick="botao(value)">
+            <input type="button" class="btn" value="+" onclick="botao(value)">
+            <input type="button" class="btn" id="igual" value="=" onclick="calcular()">
+            
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
